@@ -1,0 +1,122 @@
+:root {
+  --color-primary-cyan: hsl(179, 62%, 43%);
+  --color-primary-cyanLight: rgb(74, 190, 189);
+  --color-primary-BrightYellow: hsl(71, 73%, 54%);
+  --color-neutral-LightGray: hsl(204, 43%, 93%);
+  --color-neutral-GrayishBlue: hsl(218, 22%, 67%);
+
+  --Body-Font-Size: 16px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: var(--color-neutral-LightGray);
+}
+
+.main {
+  width: 640px;
+  height: 480px;
+  background-color: white;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 50px hsl(207, 11%, 84%);
+  border-radius: 8px;
+}
+
+.container1 {
+  height: 220px;
+}
+
+.container1 h1 {
+  color: var(--color-primary-cyan);
+  margin: 0;
+  padding: 40px 0 10px 40px;
+  font-size: 1.5rem;
+}
+
+.container1 h2 {
+  color: var(--color-primary-BrightYellow);
+  margin: 0;
+  padding: 10px 0 10px 40px;
+  font-size: 1.1rem;
+}
+
+.container1 p {
+  color: var(--color-neutral-GrayishBlue);
+  margin: 0;
+  padding: 10px 0 0 40px;
+}
+
+.container2 {
+  height: 260px;
+  width: 640px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 0 8px 8px;
+}
+
+.container2a {
+  width: 320px;
+  background-color: var(--color-primary-cyan);
+  color: white;
+  padding: 30px 0 0 40px;
+  border-radius: 0 0 0 8px;
+}
+
+.container2a h3 {
+  margin: 0;
+}
+
+.dolar {
+  font-size: 2rem;
+}
+
+.month {
+  color: #b9e6e6;
+}
+
+.button {
+  background-color: var(--color-primary-BrightYellow);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 50px;
+  width: 240px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  box-shadow: -2px 2px 15px -5px #596969;
+}
+
+.button:hover {
+  background-color: var(--color-primary-cyanLight);
+}
+
+.container2b {
+  width: 320px;
+  padding: 30px 30px 0 10px;
+  background-color: var(--color-primary-cyanLight);
+  border-radius: 0 0 8px 0;
+}
+
+.container2b h3 {
+  padding-left: 40px;
+  margin: 0;
+  color: white;
+}
+
+.WhyUs {
+  list-style-type: none;
+  color: #b9e6e6;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-primary-cyan);
+}
