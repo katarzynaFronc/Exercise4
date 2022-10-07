@@ -11,6 +11,7 @@
 body {
   font-family: "Karla", sans-serif;
   background: var(--color-neutral-LightGray);
+  height: 100%;
 }
 
 .main {
@@ -45,7 +46,8 @@ body {
 .container1 p {
   color: var(--color-neutral-GrayishBlue);
   margin: 0;
-  padding: 10px 0 0 40px;
+  padding: 10px 20px 0 40px;
+  line-height: 30px;
 }
 
 .container2 {
@@ -57,7 +59,7 @@ body {
 }
 
 .container2a {
-  width: 320px;
+  width: 50%;
   background-color: var(--color-primary-cyan);
   color: white;
   padding: 30px 0 0 40px;
@@ -76,24 +78,30 @@ body {
   color: #b9e6e6;
 }
 
+.container2a button {
+  align-items: ;
+}
+
 .button {
   background-color: var(--color-primary-BrightYellow);
   color: white;
   border: none;
   border-radius: 6px;
   height: 50px;
-  width: 240px;
+  width: 85%;
+  padding: 10px;
   font-size: 1.2rem;
   margin-top: 20px;
   box-shadow: -2px 2px 15px -5px #596969;
 }
 
 .button:hover {
-  background-color: var(--color-primary-cyanLight);
+  background-color: var(--color-neutral-LightGray);
+  color: var(--color-primary-cyan);
 }
 
 .container2b {
-  width: 320px;
+  width: 50%;
   padding: 30px 30px 0 10px;
   background-color: var(--color-primary-cyanLight);
   border-radius: 0 0 8px 0;
@@ -119,4 +127,75 @@ body {
 
 .attribution a {
   color: var(--color-primary-cyan);
+}
+
+/* --------mobile 375px-----------*/
+
+@media (max-width: 375px) {
+  .main {
+    width: 90%;
+    min-width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .container1 {
+    height: auto;
+    padding: 0 0 30px 0;
+  }
+
+  .container1 h1 {
+    padding: 30px 0 10px 30px;
+    font-size: 1.2rem;
+  }
+
+  .container1 h2 {
+    padding: 10px 0 10px 30px;
+    font-size: 0.9rem;
+  }
+
+  .container1 p {
+    padding: 10px 20px 0 30px;
+    line-height: 25px;
+    font-size: 0.8rem;
+  }
+
+  .container2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .container2a {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .container2a h3 {
+    padding-left: 30px;
+  }
+
+  .container2a p {
+    padding: 10px 20px 0 30px;
+    font-size: 0.9rem;
+  }
+
+  .container2b {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    height: auto;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .button {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    font-size: 0.95rem;
+  }
+  .attribution {
+    display: none;
+  }
 }
